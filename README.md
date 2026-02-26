@@ -1,4 +1,4 @@
-﻿原文为 《Harnessing vision models for time series analysis: a survey》
+原文为 《Harnessing vision models for time series analysis: a survey》
 原文链接 [Paper](https://dl.acm.org/doi/10.24963/ijcai.2025/1178)
 ## 一、思想及优势
 
@@ -73,14 +73,14 @@ LVMs 相对 LLMs 的 4 大核心优势
 
 | 作者/年份 | 模型 |方法| 论文链接 |
 |-----------|-----------|----------|----------|
-| Li et al., 2022 | |MTS 矩阵直接映射为单通道热力图 | [Paper]() |
-| Yazdanbakhsh and Dick, 2019 || MTS 矩阵直接映射为单通道热力图 | [Paper]() |
-| Karami et al., 2024 | TimEHR |分箱操作处理不均匀时间步 MTS | [Paper]() |
-| Zeng et al., 2021 | |金融 MTS 重塑为 3×3 热力图序列 | [Paper]() |
-| Chen et al., 2024 | VisionTS|周期分段堆叠的 UTS 矩阵化 + 三通道热力图成像法| [Paper]() |
-| Wu et al., 2023 |  TimesNet  |周期分段堆叠的 UTS 矩阵化 + 三通道热力图成像法| [Paper]() |
-| Wang et al., 2025 | TimeMixer++ |周期分段堆叠的 UTS 矩阵化 + 三通道热力图成像法| [Paper]() |
-| Nie et al., 2023 | |通道独立假设建模，将 MTS拆分为独立的 UTS，Electricity 数据集| [Paper]() |
+| Li et al., 2022 | TTS-GAN|MTS 矩阵直接映射为单通道热力图 | [Paper](https://arxiv.org/abs/2202.02691) |
+| Yazdanbakhsh and Dick, 2019 || MTS 矩阵直接映射为单通道热力图 | [Paper](https://arxiv.org/abs/1905.01697) |
+| Karami et al., 2024 | TimEHR |分箱操作处理不均匀时间步 MTS | [Paper](https://ieeexplore.ieee.org/document/11027528) |
+| Zeng et al., 2021 | |金融 MTS 重塑为 3×3 热力图序列 | [Paper](https://arxiv.org/abs/2102.12061) |
+| Chen et al., 2024 | VisionTS|周期分段堆叠的 UTS 矩阵化 + 三通道热力图成像法| [Paper](https://arxiv.org/abs/2408.17253) |
+| Wu et al., 2023 |  TimesNet  |周期分段堆叠的 UTS 矩阵化 + 三通道热力图成像法| [Paper](https://openreview.net/forum?id=ju_Uqw384Oq) |
+| Wang et al., 2025 | TimeMixer++ |周期分段堆叠的 UTS 矩阵化 + 三通道热力图成像法| [Paper](https://arxiv.org/abs/2410.16032) |
+| Nie et al., 2023 | |通道独立假设建模，将 MTS拆分为独立的 UTS，Electricity 数据集| [Paper](https://arxiv.org/abs/2211.14730) |
 
 ### (3) 频谱图（Spectrogram）
 
@@ -105,14 +105,14 @@ LVMs 相对 LLMs 的 4 大核心优势
 
 | 作者/年份 | 模型| 方法 | 论文链接 |
 |-----------|-----------|----------|----------|
-| Gong et al., 2021 | AST | 滤波器组 + 视觉 Transformer(ViT) | [Paper]() |
-| Dixit et al., 2024 || STFT + LMMs ，UTS少样本分类 | [Paper]() |
-| Du et al., 2020 | |小波变换频谱图 ，金融UTS时序分类 | [Paper]() |
-| Namura et al., 2024 | ITF-TAD |UTS无训练异常检测| [Paper]() |
-| Zeng et al., 2023 || 小波变换频谱图 + ViT ，金融 UTS 预测| [Paper]() |
-| Gong et al., 2022 | SSAST | AST模型的基础上改进| [Paper]() |
-| Baade et al., 2022 | |掩码自编码器（MAE）+ AST | [Paper]() |
-| Li et al., 2023a | |SSAST + GRU，实现音频声事件检测（SED） 任务 | [Paper]() |
+| Gong et al., 2021 | AST | 滤波器组 + 视觉 Transformer(ViT) | [Paper](https://arxiv.org/abs/2104.01778) |
+| Dixit et al., 2024 || STFT + 大型多模态模型(LMMs) ，UTS少样本分类 | [Paper](https://arxiv.org/abs/2411.12058) |
+| Du et al., 2020 | |小波变换频谱图 ，金融UTS时序分类 | [Paper](https://arxiv.org/abs/2008.06042) |
+| Namura et al., 2024 | ITF-TAD |UTS无训练异常检测| [Paper](https://arxiv.org/abs/2408.14756) |
+| Zeng et al., 2023 || 小波变换频谱图 + ViT ，金融 UTS 预测| [Paper](https://dblp.org/rec/journals/corr/abs-2403-11047.html) |
+| Gong et al., 2022 | SSAST | AST模型的基础上改进| [Paper](https://arxiv.org/abs/2110.09784) |
+| Baade et al., 2022 |MAE-AST |掩码自编码器（MAE）+ AST | [Paper](https://arxiv.org/abs/2203.16691) |
+| Li et al., 2023a | AST-SED|SSAST + GRU，实现音频声事件检测（SED） 任务 | [Paper](https://arxiv.org/abs/2303.03689) |
 
 ### (4) 格拉姆角场（GAF）
 
@@ -138,9 +138,9 @@ GAF 分为两种：**GASF** 和 **GADF**
 
 | 作者/年份 | 模型 | 方法 |论文链接 |
 |-----------|-----------|----------|----------|
-| Wang and Oates 2015a || GAF 首次落地场景 | [链接] |
-| Wang and Oates 2015b || GAF 扩展到时序填补任务 | [链接] |
-| Barra et al., 2020 || GAF 应用于金融时序预测 | [链接] |
+| Wang and Oates 2015a || GAF 首次落地场景 | [Paper](https://cdn.aaai.org/ocs/ws/ws0115/10179-46015-1-PB.pdf) |
+| Wang and Oates 2015b || GAF 扩展到时序填补任务 | [Paper](https://arxiv.org/abs/1506.00327) |
+| Barra et al., 2020 || GAF 应用于金融时序预测 | [Paper](https://ieeexplore.ieee.org/document/9080613) |
 
 ### (5) 递归图（RP）
 
@@ -165,10 +165,10 @@ $$v_t = \left[ x_t, x_{t+\tau}, x_{t+2\tau}, \dots, x_{t+(m-1)\tau} \right] \in 
 
 | 作者/年份 | 模型 |方法| 论文链接 |
 |-----------|-----------|----------|----------|
-| Hatami et al., 2018 | |连续灰度 RP 图像（而非黑白二值图） | [链接] |
-| Lin et al., 2024 | HCR-AdaAD| MTS 拆分为多个 UTS，每个 UTS 生成连续值 RP 图像| [链接] |
-| Li et al., 2020 | |首次将 RP 拓展到 UTS 预测任务 | [链接] |
-| Kim et al., 2024 | CAFO| RP 用于时序分类的特征解释任务 | [链接] |
+| Hatami et al., 2018 | |连续灰度 RP 图像（而非黑白二值图） | [Paper](https://www.researchgate.net/publication/320195467_Classification_of_Time-Series_Images_Using_Deep_Convolutional_Neural_Networks)|
+| Lin et al., 2024 | HCR-AdaAD| MTS 拆分为多个 UTS，每个 UTS 生成连续值 RP 图像| [Paper](https://ieeexplore.ieee.org/document/10417809) |
+| Li et al., 2020 | |首次将 RP 拓展到 UTS 预测任务 | [Paper](https://arxiv.org/abs/1904.08064) |
+| Kim et al., 2024 | CAFO| RP 用于时序分类的特征解释任务 | [Paper](https://arxiv.org/abs/2406.01833) |
 
 ### (6) 其它方法
 
@@ -176,11 +176,11 @@ $$v_t = \left[ x_t, x_{t+\tau}, x_{t+2\tau}, \dots, x_{t+(m-1)\tau} \right] \in 
 
 | 作者/年份 | 模型 |方法| 论文链接 |
 |-----------|-----------|----------|----------|
-| Wang and Oates, 2015 || 马尔可夫转移场 (MTF) | [链接] |
-| Naiman et al., 2024 | ImagenTime| RP 高维向量直接堆叠成像 | [链接] |
-| Zhang et al., 2019 | MSCRED | 相关性矩阵热力图 | [链接] |
-| Wang and Oates, 2015 |  |GASF+GADF+MTF，三方法堆叠组合为一张 3 通道图像  | [链接] |
-| Costa et al., 2024 | FIRTS| (GASF+MTF+RP ， 三种方法生成的图像，多视图学习| [链接] |
+| Wang and Oates, 2015a || 马尔可夫转移场 (MTF) | [Paper](https://cdn.aaai.org/ocs/ws/ws0115/10179-46015-1-PB.pdf) |
+| Naiman et al., 2024 | ImagenTime| RP 高维向量直接堆叠成像 | [Paper](https://arxiv.org/abs/2410.19538) |
+| Zhang et al., 2019 | MSCRED | 相关性矩阵热力图 | [Paper](https://arxiv.org/abs/1811.08055) |
+| Wang and Oates, 2015b |  |GASF+GADF+MTF，三方法堆叠组合为一张 3 通道图像  | [Paper](https://arxiv.org/abs/1506.00327) |
+| Costa et al., 2024 | FIRTS| (GASF+MTF+RP ， 三种方法生成的图像，多视图学习| [Paper](https://link.springer.com/chapter/10.1007/978-3-031-72347-6_16) |
 
 ## 四、预处理
 
